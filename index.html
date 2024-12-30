@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Prioritization Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Prioritization Assistant</h1>
+        <div id="live-clock"></div>
+
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Task Title" required />
+            <input type="datetime-local" id="task-deadline" required />
+            <input type="number" id="task-time" placeholder="Estimated Time (hours)" required />
+            <input type="text" id="client-details" placeholder="Client Details (optional)" />
+            <button type="submit">Add Task</button>
+        </form>
+        
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="task-list">
+                <!-- Tasks will appear here -->
+            </ul>
+        </div>
+
+        <button id="prioritize-button">Prioritize All Tasks</button>
+    </div>
+
+    <footer>
+        <p>Created by Srinjan Deb | <a href="mailto:srinjandeb403@gmail.com">srinjandeb403@gmail.com</a></p>
+        <p>&copy; 2024 Srinjan Deb. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
